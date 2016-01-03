@@ -1,0 +1,122 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+% \documentclass[margin]{res}
+
+\documentclass[line]{res} % default is 10 pt
+
+% the margin option causes section titles to appear to the left of body text
+% \textwidth=5.2in % increase textwidth to get smaller right margin
+% \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+% \usepackage{newcent}   % uses new century schoolbook postscript font
+
+\setlength{\textheight}{10.2in} % increase text height to fit resume on 1 page
+\topmargin=-0.5in % start text higher on the page
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+
+\begin{document}
+
+% the \\[12pt] adds a blank line after name
+\name{Simon (Haoran) Liang}
+
+\address{
+  2801 1st Ave, Unit 613 \\
+  Seattle, WA 98121 \\
+  (812) 575-0373 \\
+  simon@divby0.io \\
+  \underline{http://www.divby0.io}
+}
+
+\begin{resume}
+
+  \section{Education}
+  \rule{\textwidth}{1pt}
+    \textbf{Rose-Hulman Institute of Technology}, Terre Haute, IN
+    \hfill September 2009 - May 2013 \\
+    Bachelor of Science in Computer Science and Computer Engineering \\
+    GPA \textbf{3.75/4.00} in Major, \textbf{3.53/4.00} Overall
+
+  \section{Technical Skills}
+  \rule{\textwidth}{1pt}
+    Strong Language: Java, JavaScript (mithril.js, AngularJS, React, jQuery, lodash), Python \\
+    Knowledgeable Language: Ruby (on Rails), Objective-C \\
+    Technology: AWS (S3, Lambda, SNS, SQS), OpenCV
+
+  \section{Experience}
+  \rule{\textwidth}{1pt}
+    \textbf{Software Development Engineer}
+    \hfill August 2013 - Present \\
+    \textit{Amazon Fashion, Amazon, Inc., Seattle, WA}
+    \begin{itemize} \itemsep -2pt  % reduce space between items
+      % \item Started on the tech team for Javari subsidiary websites,
+      %       then the team got absorbed into Amazon Fashion Tech Team
+      \item Worked with a large variety of technologies as a full-stack developer
+      \item Develop and maintain Amazon Fashion Pages on Amazon Website and Native iPad Application
+      \item Develop and prototype enhanced UX web applications for fashion-engaged customers at Amazon
+    \end{itemize}
+
+
+  \section{Projects}
+  \rule{\textwidth}{1pt}
+    \textbf{Project Lead}, Bra Fitter, Amazon Fashion, Seattle, WA
+    \hfill July 2015 - Present \\
+    \textit{Desktop Web Application that helps female customers to find fitting bras}
+    \begin{itemize} \itemsep -2pt  % reduce space between items
+      % \item Application collects information about customer's current bra size and how the current bra(s) fit,
+      %       then it adjusts the bra size using a fitting algorithm, and measured bra band sizes collected from
+      %       various brands, and at the end, it recommends distinct fitting bra size down to brand level
+      % \item Architected the survey frontend using isomorphic templates via \texttt{Mustache}
+      \item Built frontend using a slim Virtual-DOM-Based JavaScript Framework,
+            \texttt{mithril.js}, for uni-directional data flow
+      \item Designed an AJAX-streaming technique to decrease the Above the Fold latency from \texttt{1500ms} to
+            \texttt{250ms}, and made the service calls highly parallelized
+		\end{itemize}
+
+    \textbf{Developer}, Outfit Explorer Prototype, Seattle, WA
+    \hfill January 2015 - June 2015 \\
+    \textit{Responsive Web Prototype that allows customers to mix-and-match outfits
+            via a drag-and-drop interface}
+    \begin{itemize} \itemsep -2pt  % reduce space between items
+      \item Helped design and prototype a \texttt{Backbone} Application driving a WebGL-enabled canvas view via
+            \texttt{Pixi.js} in order to maximize rendering performance on all platforms
+      \item Created a CRUD-based inventory management tool for merchandisers to upload cropped garment images onto S3
+            using \texttt{AngularJS} and \texttt{Django}
+      \item Prototyped a simple web-based garment cropping tool using \texttt{Django}, \texttt{OpenCV} and
+            \texttt{AngularJS}, which later on ported to use \texttt{Java Spring}, \texttt{OpenCV} and
+            \texttt{mithril.js} for performance, utilizing the GrabCut Algorithm
+    \end{itemize}
+
+  \section{Activities}
+  \rule{\textwidth}{1pt}
+    \textbf{Curriculum Planner, Mentor and Judge}, CodeGirls, Guangzhou, China
+    \hfill December 2015 \\
+    \textit{Bootcamp that teaches high school/college female students web development}
+    \begin{itemize} \itemsep -2pt  % reduce space between items
+      \item Designed a 5-day course on basic web development by teaching \texttt{Rails},
+      \texttt{Bootstrap} and \texttt{jQuery}
+      \item Students worked on their website ideas in groups of 3 with the help of mentors
+      \item Wrote detailed frontend tutorials and recorded video tutorials for the event
+      \item URL: \underline{https://github.com/Code-Girls/2015Winter/wiki}
+    \end{itemize}
+
+    \textbf{Intern Mentor}, Amazon Fashion, Seattle, WA
+    \hfill June 2015 \\
+    \textit{12-week Summer Internship Program at Amazon}
+    \begin{itemize} \itemsep -2pt  % reduce space between items
+      \item Worked with the intern to gather requirements and choose appropriate
+            technology for the project
+      \item Gave advice on backend Java service development and dev resources
+            for Android development
+      \item Guided intern to learn and use Java 8 Stream API
+      \item Suggested software engineering resources to read about refactoring and clean code
+      \item Worked out plans with the intern to take the Android prototype to production
+    \end{itemize}
+
+% % Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
+% \section{Computer Skills}
+% \rule{\textwidth}{1pt}
+%    \begin{tabular}{l p{3in}}
+%     \underline{Languages:} & Java, JavaScript (mithril.js, AngularJS, React), Python, Objective-C \\
+% \end{tabular}
+
+\end{resume}
+\end{document}

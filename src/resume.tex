@@ -16,16 +16,15 @@
 \begin{document}
 
 % the \\[12pt] adds a blank line after name
-\name{Simon (Haoran) Liang}
+\name{Haoran (Simon) Liang}
 
 \address{
-  2801 1st Ave, Unit 613 \\
-  Seattle, WA 98121 \\
-  (812) 575-0373 \\
-  simon@divby0.io \\
-  \underline{http://www.divby0.io}
+  33 Suzhou Jie, Room 1421, Haidian District\\
+  Beijing, China 100000\\
+  +86 13544439722\\
+  simon@divby0.io
 }
-\address{\textbf{Open to Relocation}}
+% \address{\textbf{Open to Relocation}}
 
 \begin{resume}
 
@@ -38,28 +37,57 @@
 
   \section{Technical Skills}
   \rule{\textwidth}{1pt}
-    Strong Language: Java, JavaScript (mithril.js, AngularJS, React, node.js), Python \\
-    Knowledgeable Language: Ruby (on Rails), Objective-C \\
-    Technology: AWS (S3, Lambda, SNS, SQS), OpenCV
+    Strong Language: Java, Scala, Python \\
+    Knowledgeable Language: JavaScript (AngularJS, React, node.js), Objective-C \\
+    Technology: Akka, Elasticsearch, Docker, Mesos, Spark, Kafka, AWS (S3, Lambda, Kinesis), OpenCV
 
   \section{Experience}
   \rule{\textwidth}{1pt}
+    \textbf{Engineering Director}
+    \hfill August 2016 - Present \\
+    \textit{Beijing Hooli LLC., Beijing, China}
+    \begin{itemize} \itemsep -2pt
+      \item Lead Engineering Team of 8 and iterate on product features
+      \item Gather client requirements and lead engineering team to design and deploy log analysis solution
+      \item Help refine product roadmap for Hooli's Real-time Data Analysis and Search Engine
+    \end{itemize}
+
     \textbf{Software Development Engineer}
-    \hfill August 2013 - Present \\
-    \textit{Amazon Fashion, Amazon, Inc., Seattle, WA}
+    \hfill August 2013 - May 2016 \\
+    \textit{Amazon Fashion, Amazon, Inc., Seattle, WA, USA}
     \begin{itemize} \itemsep -2pt  % reduce space between items
       % \item Started on the tech team for Javari subsidiary websites,
       %       then the team got absorbed into Amazon Fashion Tech Team
       \item Worked with a large variety of technologies as a full-stack developer
-      \item Develop and maintain Amazon Fashion Pages on Amazon Website and Native iPad Application
-      \item Develop and prototype enhanced UX web applications for fashion-engaged customers at Amazon
+      \item Developed and maintained Amazon Fashion Pages on Amazon Website and Native iPad Application
+      \item Developed and prototyped enhanced UX web applications for fashion-engaged customers at Amazon
     \end{itemize}
 
 
   \section{Projects}
   \rule{\textwidth}{1pt}
-    \textbf{Lead Developer}, Bra Fitter, Amazon Fashion, Seattle, WA
-    \hfill July 2015 - Present \\
+    \textbf{Lead Developer}, Hooli XYZ, Beijing Hooli LLC., Beijing, China
+    \textit{Real-time Data Analytics and Search Engine}
+    \hfill August 2016 - Present \\
+    \begin{itemize} \itemsep -2pt
+      \item Designed a distributed data analytics engine that transforms unstructured data into searchable 
+      indices using \textit{Akka}, \textit{Spark} and \textit{Elasticsearch}
+      \item Improved Indexing performance from 5000 events/s to 50000 events/s by switching from \textit{Logstash}
+      to a custom solution built with \textit{Spark Streaming} and \textit{Akka}
+      \item Refactored and scaled \textit{Elasticsearch} cluster to index 100TB+ data with sub-second search performance
+      \item Partnered with a data scientist advisor to design and implement an Anomaly Detection feature using BIRCH algorithm
+    \end{itemize}
+    
+    % \textbf{Developer}, Shoefitr API, Amazon Fashion, Seattle, WA, USA
+    % \hfill January 2016 - May 2016 \\
+    % \begin{itemize} \itemsep -2pt
+    %   \item Refactored legacy monolithic ASP.NET web server into a pure backend API and a lightweight web server
+    %   \item Helped re-design the data processing procedures for raw shoe 3D point cloud data input
+    %   \item Re-wrote API servers in Java and migrated into internal Amazon stack
+    % \end{itemize}
+
+    \textbf{Lead Developer}, Bra Fitter, Amazon Fashion, Seattle, WA, USA
+    \hfill July 2015 - January 2016 \\
     \textit{Desktop Web Application that helps female customers find fitting bras}
     \begin{itemize} \itemsep -2pt  % reduce space between items
       % \item Application collects information about customer's current bra size and how the current bra(s) fit,
@@ -72,43 +100,51 @@
             \texttt{250ms}, and made the service calls highly parallelized
 		\end{itemize}
 
-    \textbf{Developer}, Outfit Explorer Prototype, Seattle, WA
-    \hfill January 2015 - June 2015 \\
-    \textit{Responsive Web Prototype that allows customers to mix-and-match outfits
-            via a drag-and-drop interface}
-    \begin{itemize} \itemsep -2pt  % reduce space between items
-      \item Helped design and prototype a \texttt{Backbone} Application driving a WebGL-enabled canvas view via
-            \texttt{Pixi.js} in order to maximize rendering performance on all platforms
-      \item Created a CRUD-based inventory management tool for merchandisers to upload cropped garment images onto S3
-            using \texttt{AngularJS} and \texttt{Django}
-      \item Prototyped a simple web-based garment cropping tool using \texttt{Django}, \texttt{OpenCV} and
-            \texttt{AngularJS}, which later on ported to use \texttt{Java Spring}, \texttt{OpenCV} and
-            \texttt{mithril.js} for performance, utilizing the GrabCut Algorithm
-    \end{itemize}
+    % \textbf{Developer}, Outfit Explorer Prototype, Seattle, WA
+    % \hfill January 2015 - June 2015 \\
+    % \textit{Responsive Web Prototype that allows customers to mix-and-match outfits
+    %         via a drag-and-drop interface}
+    % \begin{itemize} \itemsep -2pt  % reduce space between items
+    %   \item Helped design and prototype a \texttt{Backbone} Application driving a WebGL-enabled canvas view via
+    %         \texttt{Pixi.js} in order to maximize rendering performance on all platforms
+    %   \item Created a CRUD-based inventory management tool for merchandisers to upload cropped garment images onto S3
+    %         using \texttt{AngularJS} and \texttt{Django}
+    %   \item Prototyped a simple web-based garment cropping tool using \texttt{Django}, \texttt{OpenCV} and
+    %         \texttt{AngularJS}, which later on ported to use \texttt{Java Spring}, \texttt{OpenCV} and
+    %         \texttt{mithril.js} for performance, utilizing the GrabCut Algorithm
+    % \end{itemize}
 
-    \textbf{Creator}, Simon’s Relocalizer for StarCraft II
-    \hfill August 2012 - March 2013 \\
-    \textit{StarCraft II – Online Multiplayer Real-Time Strategy PC Game}
-    \begin{itemize} \itemsep -2pt  % reduce space between items
-      \item Software modifies game client settings so players don’t need multiple copies to play on different regions
-      \item Wrote software in \texttt{C\#} for Windows, hosted on GitHub as an open-source project
-      \item Achieved 9,000 total downloads worldwide within one week, 20,000 total downloads within two weeks
-      \item Had a total of 35,000 downloads worldwide, and was used by several professional StarCraft II players
-      \item URL: \underline{https://github.com/lhr0909/SC2Patch150Relocalizer}
-    \end{itemize}
+    % \textbf{Creator}, Simon’s Relocalizer for StarCraft II
+    % \hfill August 2012 - March 2013 \\
+    % \textit{StarCraft II – Online Multiplayer Real-Time Strategy PC Game}
+    % \begin{itemize} \itemsep -2pt  % reduce space between items
+    %   \item Software modifies game client settings so players don’t need multiple copies to play on different regions
+    %   \item Wrote software in \texttt{C\#} for Windows, hosted on GitHub as an open-source project
+    %   \item Achieved 9,000 total downloads worldwide within one week, 20,000 total downloads within two weeks
+    %   \item Had a total of 35,000 downloads worldwide, and was used by several professional StarCraft II players
+    %   \item URL: \underline{https://github.com/lhr0909/SC2Patch150Relocalizer}
+    % \end{itemize}
 
   \section{Activities}
   \rule{\textwidth}{1pt}
-    \textbf{Curriculum Planner, Mentor and Judge}, CodeGirls, Guangzhou, China
-    \hfill December 2015 \\
-    \textit{Bootcamp that teaches high school/college female students web development}
+    \textbf{Coordinator and Instructor}, HackerCamp, Guangzhou, China
+    \hfill June 2016 - July 2016 \\
+    \textit{Bootcamp that teaches students (K-12) computer science}
     \begin{itemize} \itemsep -2pt  % reduce space between items
-      \item Designed a 5-day course on basic web development by teaching \texttt{Rails},
-      \texttt{Bootstrap} and \texttt{jQuery}
-      \item 12 Students worked on their website ideas in groups of 3 with the help of 3 mentors
-      \item Wrote frontend tutorials and recorded videos for the write-ups
-      \item URL: \underline{https://github.com/Code-Girls/2015Winter/wiki}
+      \item Held a 7-day bootcamp on various computer science concepts such as programming language, network, robotics and Machine Learning
+      \item Designed the course that helps students to understand the concepts via various projects and activities, such as game development projects, drone programming and VR glasses assembly
     \end{itemize}
+
+    % \textbf{Curriculum Planner, Mentor and Judge}, CodeGirls, Guangzhou, China
+    % \hfill December 2015 \\
+    % \textit{Bootcamp that teaches high school/college female students web development}
+    % \begin{itemize} \itemsep -2pt  % reduce space between items
+    %   \item Designed a 5-day course on basic web development by teaching \texttt{Rails},
+    %   \texttt{Bootstrap} and \texttt{jQuery}
+    %   \item 12 Students worked on their website ideas in groups of 3 with the help of 3 mentors
+    %   \item Wrote frontend tutorials and recorded videos for the write-ups
+    %   \item URL: \underline{https://github.com/Code-Girls/2015Winter/wiki}
+    % \end{itemize}
 
     % \textbf{Intern Mentor}, Amazon Fashion, Seattle, WA
     % \hfill June 2015 \\
